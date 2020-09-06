@@ -1,0 +1,116 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.4in, top=0.4in, right=0.4in, bottom=0.4in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Denys Smirnov} % Your name
+
+\address{
+    +380(66)253-4992 \\
+    \href{mailto:dendi239+resume@gmail.com}{dendi239@gmail.com} \\ \href{https://www.linkedin.com/in/denys-smirnov/}{linkedin} \\
+    \href{https://www.github.com/dendi239}{github} \\
+    \href{https://codeforces.com/profile/dendi239}{codeforces}
+}  % Your phone number, email, linkedin, and (optional) website
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Objective}
+
+Software Engineer with 3+ years of commercial experience.
+Has strong olympiad mathematical and competitive programming background.
+Focused on reducing routine and creating best products with available resources.
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+{\bf Bachelor of Mathematics}, V. N. Karazin Kharkiv National University \hfill {2015 -- 2021}
+
+\end{rSection}
+
+\begin{rSection}{Achievements}
+\begin{itemize}
+    \itemsep -3pt
+    \item The Summer School Programming - Uzhgorod --- 3rd place (out of 70 teams-participants)    \hfill Aug 2020
+    \item ICPC 2016, 2017, 2019 --- Semi-final participation    \hfill Oct 2016, 2017, 2019
+    \item KPI-Open 2019 --- 3rd place (out of over 120 teams-participants)   \hfill Jul 2019
+    \item Iran's scientific olympiad --- Bronze                 \hfill Jul 2017
+    \item IMO 2015 --- \href{https://www.imo-official.org/participant_r.aspx?id=25121}{Gold Medal} (even with 1pt for P1)        \hfill Jul 2015
+    \item IMO 2014 --- \href{https://www.imo-official.org/participant_r.aspx?id=25121}{Silver Medal}        \hfill Jul 2014
+\end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% TECHINICAL STRENGTHS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{EXPERIENCE}
+
+\textbf{C++ Game Developer} \hfill Apr 2020 - Now \\
+\href{https://playwing.com}{Playwing Ltd} \hfill \textit{Kharkiv, Ukraine}
+ \begin{itemize}
+    \itemsep -3pt {}
+    \item Worked with Unreal Engine 4 on AAA game.
+    \item Implemented stand-alone deep-linking subsystem independed from concrete UI-components code.
+    \item Created responsive interface on top of Unreal Engine's widget system.
+ \end{itemize}
+
+\textbf{iOS Software engineer} \hfill Jun 2017 -- Mar 2020 \\
+\href{https://cruxlab.com/}{Cruxlab Inc.} \hfill \textit{Kharkiv, Ukraine}
+\begin{itemize}
+    \itemsep -3pt {}
+    \item Worked with various technologies: CoreData, ARKit, SceneKit, Firebase, Google Maps API, etc
+    \item Mastered a lot of techniques: reactive functional programming, dependency injection, interactive transitions.
+    % \item Setup continuous interactions with proper secrets handling and different scenariouses.
+    \item Mastered a lot of software architectural patterns: MVC, MVVM, VIPER, RIBs.
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+\vspace{-1.25em}
+\item \href{https://github.com/dendi239/yet-another-poll-bot}{\textbf{yet another poll bot.[go]}} {
+    Telegram bot for polls with restrictions.
+    Designed to use syntax like $!1 \& !2 \Rightarrow 3 | 4$ to check if selected options are a valid variant.
+}
+\item \href{https://github.com/dendi239/cp-tool}{\textbf{cp-tool.[rust]}} {
+    Competitive programming tool to use with different judge systems as \href{https://ejudge.ru}{ejudge}, \href{https://codeforces.com}{codeforces}, \href{https://contest.yandex.ru}{yandex-contest}, and so on.
+    Inspired by \href{https://github.com/xalanq/cf-tool}{cf-tool}, but keep reusablity for different judge systems in mind.
+    % It's my first project in rust, so I tried to use as much benefits for type system as possible.
+}
+\item \href{https://github.com/dendi239/algorithms-data-structures}{\textbf{Algorithms and Data Structures.[cpp]}} {
+    Implemented a lot of algorithms widely used in competitive programming in C++. Focused on re-usability and as much usages for as generous situations as possible with performance in mind.
+}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Articles}
+
+Competitive programming oriented articles. Focused on reducing amount of written code and oriented on using all available c++ features to do so.
+\href{https://codeforces.com/blog/entry/79446}{General tips \& tricks for cpp source} contains various tips can reduce amount of written code: from simple typealiases to using generic lambda syntax for comparators defining.
+\href{https://codeforces.com/blog/entry/79066}{Reading} describes how to define and read variables with single macro.
+\href{https://codeforces.com/blog/entry/79100}{For macro} describing ways to reduce code spent on simple \texttt{for}: either a macro, or something like \href{https://en.cppreference.com/w/cpp/ranges}{ranges library} comes in c++20.
+
+\end{rSection}
+
+
+% \begin{rSection}{SKILLS}
+
+% \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+% Technical Skills & A, B, C, D
+% \\
+% Soft Skills & A, B, C, D\\
+% XYZ & A, B, C, D\\
+% \end{tabular}\\
+% \end{rSection}
+
+\end{document}
