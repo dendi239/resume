@@ -24,14 +24,14 @@
 
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
-\usepackage{ifthen} % Required for ifthenelse statements
-
+\usepackage{ifthen} % Required for ifthenelse statements\
+\usepackage[dvipsnames]{xcolor}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,
-    urlcolor=cyan,
+    urlcolor=Blue,
 }
 
 \pagestyle{empty} % Suppress page numbers
