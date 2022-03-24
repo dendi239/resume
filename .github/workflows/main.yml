@@ -1,8 +1,6 @@
 name: Build LaTeX document
 on:
   push:
-    branches:
-      - master
     tags:
       - '*'
 jobs:
