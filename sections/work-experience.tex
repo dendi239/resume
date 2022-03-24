@@ -1,27 +1,43 @@
-\begin{rSection}{Work experience}
+\newenvironment{work}[5]{ % <name> <url> <date> <position> <location>
     \begin{rSubsection}
-        {\href{https://playwing.com}{Playwing Ltd}
-        %()
-        }
-        {Apr 2020 -- Now}
-        {C++ Game Developer}
-        {Kharkiv, Ukraine}
-        \item Worked with Unreal Engine 4 on AAA game.
-        \item Implemented stand-alone deep-linking subsystem independed from concrete UI-components code.
-        \item Created responsive interface on top of Unreal Engine's widget system.
+        {\href{#2}{#1}}
+        {#3}
+        {#4}
+        {#5}
+}{
     \end{rSubsection}
+}
 
-    \begin{rSubsection}
-        {\href{https://cruxlab.com/}{Cruxlab Inc}
-        % (100+ completed projects, 10M+ users)
-        }
-        {Jun 2017 -- Mar 2020}
-        {iOS Software Engineer}
-        {Kharkiv, Ukraine}
+\begin{cvsection}{Work experience}
+\begin{work}
+{Snap Inc.}
+{https://snap.com}
+{Apr 2021 -- Present}
+{Software Engineer}
+{Kyiv, Ukraine}
+	\item Worked on internal tools for Cameos product.
+\end{work}
 
-        \item Worked with various technologies: CoreData, ARKit, SceneKit, Firebase, Google Maps API, etc
-        \item Mastered a lot of techniques: reactive functional programming, dependency injection, interactive transitions.
-        % \item Setup continuous interactions with proper secrets handling and different scenariouses.
-        \item Mastered a lot of software architectural patterns: MVC, MVVM, VIPER, RIBs.
-    \end{rSubsection}
-\end{rSection}
+\begin{work}
+{Playwing Ltd.}
+{https://playwing.com}
+{Apr 2020 -- Apr 2021}
+{C++ Game Developer}
+{Kharkiv, Ukraine}
+	\item Worked with Unreal Engine 4 on \href{https://www.century-age-of-ashes.com/}{Century Age of Ashes}.
+	\item Implemented stand-alone deep-linking subsystem independed from concrete UI-components code.
+	\item Created responsive interface on top of Unreal Engine's widget system.
+\end{work}
+
+\begin{work}
+{Cruxlab Inc}
+{https://cruxlab.com/}
+{Jun 2017 -- Mar 2020}
+{iOS Software Engineer}
+{Kharkiv, Ukraine}
+	\item Worked with various technologies: CoreData, ARKit, SceneKit, Firebase, Google Maps API, etc
+	\item Mastered a lot of techniques: reactive functional programming, dependency injection, interactive transitions.
+	\item Setup continuous interactions with proper secrets handling and different scenariouses.
+	\item Mastered a lot of software architectural patterns: MVC, MVVM, VIPER, RIBs.
+\end{work}
+\end{cvsection}

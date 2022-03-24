@@ -6,17 +6,38 @@
 \name{Denys Smirnov} % Your name
 
 \address{
-+380(66)253-4992 \\
 \href{mailto:denys.o.smirnov+cv@gmail.com}{denys.o.smirnov@gmail.com} \\
 \href{https://www.linkedin.com/in/denys-smirnov/}{linkedin} \\
 \href{https://www.github.com/dendi239}{github} \\
 \href{https://codeforces.com/profile/dendi239}{codeforces}
 }  % Your phone number, email, linkedin, and (optional) website
 
+\newcommand\honor[3] % <name> <date> <award>
+{ \item {#1} --- {#3} \hfill {#2} }
+
+\newenvironment{honors}[1] % <name>
+{
+\begin{rSection}{#1}
+  \begin{itemize}
+    \itemsep -3pt
+}
+{
+  \end{itemize}
+\end{rSection}
+}
+
+\newenvironment{cvsection}[1]
+{ \begin{rSection}{#1} }
+{ \end{rSection} }
+
+\newenvironment{projects}[1]{\begin{rSection}{#1} \vspace{-1.25em}}{\end{rSection}}
+\newcommand{\project}[3] % <name> <url> <description>
+{ \item \href{#2}{\textbf{#1}} {#3} }
+
 \begin{document}
 
-\input{sections/objective.tex}
-\input{sections/education.tex}
+% \input{sections/objective.tex}
+% \input{sections/education.tex}
 \input{sections/work-experience.tex}
 \input{sections/pet-projects.tex}
 \input{sections/articles.tex}
