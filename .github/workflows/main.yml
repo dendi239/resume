@@ -20,7 +20,5 @@ jobs:
       - name: Create release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: 
-            - "cv.pdf"
-            - "grades.pdf"
+          artifacts: "cv.pdf,grades.pdf"
           token: ${{ secrets.GITHUB_TOKEN }}
