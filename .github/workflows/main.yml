@@ -4,31 +4,23 @@ on:
     tags:
       - '*'
 jobs:
-  build_cv:
+  build_latex:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
-      - name: Compile LaTeX document
+      - name: Compile cv
         uses: xu-cheng/latex-action@v2
         with:
           root_file: cv.tex
-      - name: Create release
-        uses: ncipollo/release-action@v1
-        with:
-          artifacts: "cv.pdf"
-          token: ${{ secrets.GITHUB_TOKEN }}
-  build_grades:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Set up Git repository
-        uses: actions/checkout@v2
-      - name: Compile LaTeX document
+      - name: Compile grades
         uses: xu-cheng/latex-action@v2
         with:
           root_file: grades.tex
       - name: Create release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "grades.pdf"
+          artifacts: 
+            - "cv.pdf"
+            - "grades.pdf"
           token: ${{ secrets.GITHUB_TOKEN }}
